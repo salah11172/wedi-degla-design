@@ -1,0 +1,1153 @@
+/* global Styel */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+
+/*  ------------ style for laptop screen---------- */
+
+@media screen and (min-width:1250px) {
+    /* --------- Header Style -------- */
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 40px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 550px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 130px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 850px;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 550px;
+        background: url(../images/banner.jpg);
+        background-size: cover;
+        clip-path: circle(59% at 50% 0%);
+    }
+    .acdmay {
+        position: relative;
+        top: 500px;
+        width: 80%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .container {
+        width: 250px;
+        height: 180px;
+        color: transparent;
+        border: 1px solid rgb(247, 243, 4);
+        border-radius: 25px;
+        display: flex;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        overflow: hidden;
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .inscontainer {
+        width: 250px;
+        height: 180px;
+        color: transparent;
+        font-size: 30px;
+        padding-left: 20px;
+        font-weight: bold;
+        display: flex;
+        border-radius: 25px;
+        position: absolute;
+        background: linear-gradient(#ff07, #ff07);
+        clip-path: circle(2px at 0 0);
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .container:hover .inscontainer {
+        background: linear-gradient(#ff07, #ff07);
+        color: #000;
+        clip-path: circle(65% at 0 0);
+    }
+    #co1 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+    }
+    #co2 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/squashacademy.jpg) no-repeat;
+        background-position: center;
+    }
+    #co3 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/swimmingacademy.jpg) no-repeat;
+        background-position: center;
+    }
+    #co4 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+    }
+    .serach_button {
+        position: fixed;
+        height: 50px;
+        width: 270px;
+        background: #000;
+        top: 170px;
+        left: -210px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 40px;
+        width: 50px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ------- end of frist section of contant style -------- */
+    /* -------------- About us section style */
+    .about {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .about h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .about hr {
+        width: 40%;
+        text-align: center;
+    }
+    .about_contant {
+        margin-top: 20px;
+        width: 80%;
+        height: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .about_contant .prag {
+        width: 40%;
+        height: 250px;
+        color: rgb(9, 9, 97);
+        padding-top: 20px;
+    }
+    .about_contant .about_img {
+        width: 40%;
+        height: 250px;
+    }
+    .about_contant .about_img img {
+        display: block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: all .75s 0s ease-out;
+        -webkit-transition: all .75s 0s ease-out;
+        -moz-transition: all .75s 0s ease-out;
+        -ms-transition: all .75s 0s ease-out;
+        -o-transition: all .75s 0s ease-out;
+    }
+    .about_contant .about_img:hover img {
+        opacity: 65%;
+    }
+    /* --------------end About us section style ----------------- */
+    /* --------------Schedule section style -------------------- */
+    .Schedule {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .Schedule h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .Schedule hr {
+        width: 40%;
+        text-align: center;
+    }
+    .Schedule table {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    table tr:nth-of-type(even) {
+        background: lightgrey;
+    }
+    /* -------------- End Schedule section style -------------------- */
+    /* ---------------- news section ------------------ */
+    .news {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .news h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .news hr {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .new_contant {
+        width: 80%;
+        height: 330px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .co {
+        width: 30%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        border: 1px solid black;
+    }
+    .co img {
+        margin: 10px 14px;
+        width: 90%;
+        height: 60%;
+    }
+    .co p {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding-left: 20px;
+    }
+    /* ---------------- End news section ------------------ */
+    /* ---------------- media section style--------------- */
+    .media {
+        width: 100%;
+        height: 330px;
+        position: relative;
+    }
+    .ins_media {
+        width: 80%;
+        height: 330px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background: yellow;
+        margin: 0 auto;
+    }
+    .media .img,
+    .fram {
+        width: 45%;
+        height: 315px;
+    }
+    .media .img img {
+        display: inline-block;
+        height: 315px;
+    }
+    .media .fram iframe {
+        height: 315px;
+        width: 100%;
+    }
+    /* ---------------- End media section style--------------- */
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+/* -----------End style laptop screen----------- */
+
+
+/* -----------Styel screen betwen 656 and 1249 ---------- */
+
+@media screen and (min-width :656px) and (max-width:1249px) {
+    /* --------- Header Style -------- */
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 40px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 550px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 130px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 750px;
+        overflow: hidden;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 550px;
+        background: url(../images/banner.jpg) no-repeat;
+        background-size: 100%;
+        clip-path: circle(55% at 50% 0%);
+    }
+    .acdmay {
+        position: relative;
+        top: 500px;
+        width: 95%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .container {
+        width: 250px;
+        height: 160px;
+        color: transparent;
+        border: 1px solid rgb(247, 243, 4);
+        border-radius: 25px;
+        display: flex;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        overflow: hidden;
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .inscontainer {
+        width: 250px;
+        height: 160px;
+        color: transparent;
+        font-size: 30px;
+        padding-left: 20px;
+        font-weight: bold;
+        display: flex;
+        border-radius: 25px;
+        position: absolute;
+        background: linear-gradient(#ff07, #ff07);
+        clip-path: circle(2px at 0 0);
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .container:hover .inscontainer {
+        background: linear-gradient(#ff07, #ff07);
+        color: #000;
+        clip-path: circle(65% at 0 0);
+    }
+    #co1 {
+        width: 100%;
+        height: 160px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co2 {
+        width: 100%;
+        height: 160px;
+        background: #fff url(../images/squashacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co3 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/swimmingacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co4 {
+        width: 100%;
+        height: 180px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .serach_button {
+        position: fixed;
+        height: 50px;
+        width: 270px;
+        background: #000;
+        top: 170px;
+        left: -210px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 40px;
+        width: 50px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ------- end of frist section of contant style -------- */
+    /* -------------- About us section style */
+    .about {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+        overflow: hidden;
+    }
+    .about h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .about hr {
+        width: 40%;
+        text-align: center;
+    }
+    .about_contant {
+        margin-top: 20px;
+        width: 80%;
+        height: 430px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about_contant .prag {
+        width: 80%;
+        height: 250px;
+        color: rgb(9, 9, 97);
+        padding-top: 20px;
+    }
+    .about_contant .about_img {
+        width: 80%;
+        height: 250px;
+    }
+    .about_contant .about_img img {
+        display: block;
+        margin: 10px auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: all .75s 0s ease-out;
+        -webkit-transition: all .75s 0s ease-out;
+        -moz-transition: all .75s 0s ease-out;
+        -ms-transition: all .75s 0s ease-out;
+        -o-transition: all .75s 0s ease-out;
+    }
+    .about_contant .about_img:hover img {
+        opacity: 65%;
+    }
+    /* --------------end About us section style ----------------- */
+    /* --------------Schedule section style -------------------- */
+    .Schedule {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .Schedule h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .Schedule hr {
+        width: 40%;
+        text-align: center;
+    }
+    .Schedule table {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    table tr:nth-of-type(even) {
+        background: lightgrey;
+    }
+    /* -------------- End Schedule section style -------------------- */
+    /* ---------------- news section ------------------ */
+    .news {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .news h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .news hr {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .new_contant {
+        width: 90%;
+        height: 330px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .co {
+        width: 30%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        border: 1px solid black;
+    }
+    .co img {
+        margin: 10px 14px;
+        width: 90%;
+        height: 60%;
+    }
+    .co p {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding-left: 20px;
+    }
+    /* ---------------- End news section ------------------ */
+    /* ---------------- media section style--------------- */
+    .media {
+        width: 100%;
+        height: 640px;
+        position: relative;
+    }
+    .ins_media {
+        width: 80%;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: yellow;
+        margin: 0 auto;
+    }
+    .media .img,
+    .fram {
+        margin: 5px auto;
+        width: 100%;
+        height: 315px;
+    }
+    .media .img img {
+        margin: 0 auto;
+        display: block;
+        height: 315px;
+    }
+    .media .fram iframe {
+        height: 315px;
+        width: 100%;
+    }
+    /* ---------------- End media section style--------------- */
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+/* ----------- End Styel screen betwen laptop and ipad ---------- */
+
+
+/* -----------  Styel screen betwen 426px and 655px ---------- */
+
+@media screen and (min-width :426px) and (max-width:655px) {
+    /* --------- Header Style -------- */
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 5px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 300px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 400px;
+        background: url(../images/banner.jpg);
+        background-size: 100%;
+        clip-path: circle(50% at 50% 0%);
+    }
+    .acdmay {
+        position: relative;
+        top: 350px;
+        width: 90%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .container {
+        width: 250px;
+        height: 100px;
+        color: transparent;
+        border: 1px solid rgb(247, 243, 4);
+        border-radius: 25px;
+        display: flex;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        overflow: hidden;
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .inscontainer {
+        width: 250px;
+        height: 100px;
+        color: transparent;
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: bold;
+        display: flex;
+        border-radius: 25px;
+        position: absolute;
+        background: linear-gradient(#ff07, #ff07);
+        clip-path: circle(2px at 0 0);
+        transition: all .75s 0s ease-in;
+        -webkit-transition: all .75s 0s ease-in;
+        -moz-transition: all .75s 0s ease-in;
+        -ms-transition: all .75s 0s ease-in;
+        -o-transition: all .75s 0s ease-in;
+    }
+    .container:hover .inscontainer {
+        background: linear-gradient(#ff07, #ff07);
+        color: #000;
+        clip-path: circle(40% at 0 0);
+    }
+    #co1 {
+        width: 100%;
+        height: 100px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co2 {
+        width: 100%;
+        height: 100px;
+        background: #fff url(../images/squashacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co3 {
+        width: 100%;
+        height: 100px;
+        background: #fff url(../images/swimmingacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #co4 {
+        width: 100%;
+        height: 100px;
+        background: #fff url(../images/tennisacademy.jpg) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .serach_button {
+        position: fixed;
+        height: 40px;
+        width: 200px;
+        background: #000;
+        top: 170px;
+        left: -170px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 30px;
+        width: 30px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 20px;
+        width: 150px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ------- end of frist section of contant style -------- */
+    /* -------------- About us section style */
+    .about {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+        overflow: hidden;
+    }
+    .about h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .about hr {
+        width: 40%;
+        text-align: center;
+    }
+    .about_contant {
+        margin-top: 20px;
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about_contant .prag {
+        margin: 0 auto;
+        width: 80%;
+        height: 250px;
+        color: rgb(9, 9, 97);
+        padding-top: 20px;
+    }
+    .about_contant .about_img {
+        width: 80%;
+        height: 250px;
+    }
+    .about_contant .about_img img {
+        display: block;
+        width: 100%;
+        margin: 10px 35px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: all .75s 0s ease-out;
+        -webkit-transition: all .75s 0s ease-out;
+        -moz-transition: all .75s 0s ease-out;
+        -ms-transition: all .75s 0s ease-out;
+        -o-transition: all .75s 0s ease-out;
+    }
+    .about_contant .about_img:hover img {
+        opacity: 65%;
+    }
+    /* --------------end About us section style ----------------- */
+    /* --------------Schedule section style -------------------- */
+    .Schedule {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .Schedule h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .Schedule hr {
+        width: 40%;
+        text-align: center;
+    }
+    .Schedule table {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+    table tr:nth-of-type(even) {
+        background: lightgrey;
+    }
+    /* -------------- End Schedule section style -------------------- */
+    /* ---------------- news section ------------------ */
+    .news {
+        margin-top: 5px;
+        position: relative;
+        width: 100%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background: #fff;
+    }
+    .news h1 {
+        text-align: center;
+        color: rgba(9, 9, 97, 0.712);
+        font-size: 60px;
+    }
+    .news hr {
+        width: 40%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .new_contant {
+        width: 100%;
+        height: 330px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .co {
+        width: 30%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        border: 1px solid black;
+    }
+    .co img {
+        margin: 10px 14px;
+        width: 75%;
+        height: 30%;
+    }
+    .co p {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        padding-left: 20px;
+    }
+    /* ---------------- End news section ------------------ */
+    /* ---------------- media section style--------------- */
+    .media {
+        width: 100%;
+        height: 640px;
+        position: relative;
+    }
+    .ins_media {
+        width: 80%;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: yellow;
+        margin: 0 auto;
+    }
+    .media .img,
+    .fram {
+        margin: 5px auto;
+        width: 100%;
+        height: 315px;
+    }
+    .media .img img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        height: 280px;
+    }
+    .media .fram iframe {
+        height: 315px;
+        width: 100%;
+    }
+    /* ---------------- End media section style--------------- */
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+/* ----------- End Styel screen betwen 426px and 655px ---------- */

@@ -1,0 +1,637 @@
+/* global Styel */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+/* ------------- Style for laptop -------------*/
+
+@media screen and (min-width :1250px) {
+    /* --------- Header Style -------- */
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 40px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 550px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 130px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 600px;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 550px;
+        background: url(../images/banner.jpg);
+        background-size: cover;
+        clip-path: circle(59% at 50% 0%);
+    }
+    .serach_button {
+        position: fixed;
+        height: 50px;
+        width: 270px;
+        background: #000;
+        top: 170px;
+        left: -210px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 40px;
+        width: 50px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ------- end of frist section of contant style -------- */
+    /* ----------- form style ------------ */
+    .formhead {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .formhead h1,
+    h4 {
+        text-align: center;
+    }
+    form {
+        height: 700px;
+        width: 80%;
+        margin: 10px auto;
+    }
+    form div {
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+    input {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 3px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    input[type=checkbox] {
+        display: inline-block;
+        width: 10%;
+        height: 20px;
+        font-size: 20px;
+        outline: none;
+    }
+    input[type="color"] {
+        border: none;
+        outline: none;
+    }
+    textarea {
+        display: inline-block;
+        width: 81%;
+        margin-left: 10px;
+        height: 110px;
+        font-size: 20px;
+        padding: 10px 0 0 10px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    label {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+    }
+    select {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* ---------- End Style for laptop ------------*/
+
+/* ---------- Style for screen betwwen 656px to 1249px --------------- */
+
+@media screen and (min-width :656px) and (max-width:1249px) {
+    /* --------- Header Style -------- */
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 40px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 550px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 130px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 550px;
+        background: url(../images/banner.jpg);
+        background-size: contain;
+        clip-path: circle(52% at 50% 0%);
+    }
+    .serach_button {
+        position: fixed;
+        height: 50px;
+        width: 270px;
+        background: #000;
+        top: 170px;
+        left: -210px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 40px;
+        width: 50px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ------- end of frist section of contant style -------- */
+    /* ----------- form style ------------ */
+    .formbody {
+        position: relative;
+        /* margin-top: 5px; */
+        width: 100%;
+        height: 800px;
+    }
+    .formhead {
+        height: 50px;
+        margin: 0 auto;
+    }
+    .formhead h1,
+    h4 {
+        text-align: center;
+    }
+    form {
+        height: 700px;
+        width: 80%;
+        margin: 10px auto;
+    }
+    form div {
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+    input {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 3px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    input[type=checkbox] {
+        display: inline-block;
+        width: 10%;
+        height: 20px;
+        font-size: 20px;
+        outline: none;
+    }
+    input[type="color"] {
+        border: none;
+        outline: none;
+    }
+    textarea {
+        display: inline-block;
+        width: 81%;
+        margin-left: 10px;
+        height: 110px;
+        font-size: 20px;
+        padding: 10px 0 0 10px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    label {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+    }
+    select {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* ---------- End Style for screen betwwen 656px to 1249px ---------------*/
+
+/* ---------- Style for screen betwwen 426px to 655px ---------------*/
+
+@media screen and (min-width :426px) and (max-width:655px) {
+    header {
+        margin-top: 5px;
+        position: sticky;
+        top: 0;
+        height: 70px;
+        background: rgb(36, 36, 36);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        z-index: 10000;
+    }
+    .logo {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: 5px;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        width: 300px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+        /* overflow: hidden; */
+    }
+    nav ul li {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        /* overflow: hidden; */
+    }
+    nav ul a {
+        display: inline-block;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        line-height: 70px;
+        transition: all 1.5s 0s;
+        -webkit-transition: all 1.5s 0s;
+        -moz-transition: all 1.5s 0s;
+        -ms-transition: all 1.5s 0s;
+        -o-transition: all 1.5s 0s;
+    }
+    nav ul a:hover {
+        color: lightsalmon;
+    }
+    /* --------- End Header Style -------- */
+   
+    /* ------- frist section of contant style -------- */
+    .frist_contant {
+        width: 100%;
+        height: 400px;
+    }
+    .backoverlay {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background: yellow;
+    }
+    .back {
+        width: 100%;
+        height: 400px;
+        background: url(../images/banner.jpg);
+        background-size: 100%;
+        clip-path: circle(50% at 50% 0%);
+    }
+    .serach_button {
+        position: fixed;
+        height: 40px;
+        width: 200px;
+        background: #000;
+        top: 170px;
+        left: -170px;
+        z-index: 1000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 1.5s 0s ease-in-out;
+        -webkit-transition: all 1.5s 0s ease-in-out;
+        -moz-transition: all 1.5s 0s ease-in-out;
+        -ms-transition: all 1.5s 0s ease-in-out;
+        -o-transition: all 1.5s 0s ease-in-out;
+    }
+    .serach_button img {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        height: 30px;
+        width: 30px;
+    }
+    .serach_button input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 20px;
+        width: 150px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    .serach_button:hover {
+        left: 0px;
+    }
+    /* ----------- form style ------------ */
+    .formbody {
+        position: relative;
+        width: 100%;
+        height: 950px;
+    }
+    .formhead {
+        height: 50px;
+        margin: 0 auto;
+    }
+    .formhead h1,
+    h4 {
+        text-align: center;
+    }
+    form {
+        height: 950px;
+        width: 80%;
+        margin: 10px auto;
+    }
+    form div {
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+    input {
+        display: block;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 3px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    input[type=checkbox] {
+        display: inline;
+        width: 40%;
+        height: 20px;
+        font-size: 20px;
+        outline: none;
+    }
+    input[type="color"] {
+        border: none;
+        outline: none;
+    }
+    textarea {
+        display: inline-block;
+        width: 100%;
+        margin-left: 10px;
+        height: 110px;
+        font-size: 20px;
+        padding: 10px 0 0 10px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    label {
+        display: block;
+        width: 100%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .dis{
+        display: inline;
+    }
+    select {
+        display: inline-block;
+        width: 100%;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        outline: none;
+    }
+    /* ---------------- footer section style ---------------- */
+    footer p {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* ---------- End Style for screen betwwen 426px to 655px ---------------*/
